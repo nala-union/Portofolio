@@ -4,86 +4,149 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Siti Nuraida — Portofolio</title>
-  <meta name="description" content="Portofolio pribadi: profil, proyek, dan kontak.">
+  <meta name="description" content="Portofolio Siti Nuraida: karya pilihan, cara kerja, dan kontak.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top">Siti Nuraida</a>
-    <nav aria-label="Navigasi utama">
-      <a href="#tentang">Tentang</a>
-      <a href="#proyek">Proyek</a>
-      <a href="#keahlian">Keahlian</a>
-      <a href="#kontak">Kontak</a>
-    </nav>
+    <a class="brand" href="#top">Siti Nuraida.</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Buka menu">
+      <span></span><span></span>
+    </button>
   </header>
 
+  <nav id="menu" class="menu" aria-label="Menu utama" hidden>
+    <ul>
+      <li><a href="#top">Beranda</a></li>
+      <li><a href="#karya">Karya</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+    <div class="menu-visual" aria-hidden="true"></div>
+  </nav>
+
   <main id="top">
+    <!-- Hero -->
     <section class="hero">
-      <p class="eyebrow">Portofolio</p>
-      <h1>Halo, saya <span class="accent">Siti Nuraida</span>.</h1>
-      <p class="lead">Saya membuat hal-hal yang bersih, sederhana, dan mudah dipakai. Ganti teks ini dengan satu kalimat tentang diri Anda.</p>
-      <div class="actions">
-        <a class="btn" href="#proyek">Lihat proyek</a>
-        <a class="btn btn-ghost" href="#kontak">Hubungi saya</a>
+      <div class="hero-card">
+        <h1 class="split">
+          Saya merancang hal-hal yang terasa
+          <strong>tenang, jelas, dan mudah dipakai.</strong>
+        </h1>
+        <p class="hero-sub fade-in">Ganti kalimat ini dengan peran Anda — misalnya "Desainer Grafis di Bandung".</p>
+
+        <div class="collage" aria-hidden="true">
+          <!-- Ganti setiap .tile dengan <img src="assets/nama-file.jpg" alt=""> -->
+          <div class="tile tile-a" data-speed="-0.12" data-tilt="12"></div>
+          <div class="tile tile-b" data-speed="0.08" data-tilt="-8"></div>
+          <div class="tile tile-c" data-speed="-0.2" data-tilt="16"></div>
+        </div>
       </div>
     </section>
 
-    <section id="tentang" class="section alt reveal">
-      <h2>Tentang</h2>
-      <p>Tulis perkenalan singkat di sini: siapa Anda, apa yang Anda kerjakan, dan apa yang Anda cari. Dua sampai tiga kalimat sudah cukup.</p>
-    </section>
+    <!-- Karya pilihan: kartu menumpuk saat di-scroll -->
+    <section id="karya" class="works">
+      <p class="label">Karya Pilihan</p>
 
-    <section id="proyek" class="section reveal">
-      <h2>Proyek</h2>
-      <div class="grid">
-        <article class="card reveal">
-          <div class="thumb" aria-hidden="true"></div>
-          <h3>Nama Proyek 1</h3>
-          <p>Deskripsi singkat proyek dan peran Anda di dalamnya.</p>
-          <a href="#" class="link">Lihat detail</a>
+      <div class="stack">
+        <article class="stack-item">
+          <a href="#" class="work-card">
+            <div class="work-media media-1">
+              <!-- <img src="assets/proyek-1.jpg" alt="Nama Proyek Satu"> -->
+            </div>
+            <div class="work-info">
+              <div>
+                <h2>Nama Proyek Satu</h2>
+                <p class="tagline">Satu kalimat singkat tentang proyek ini.</p>
+              </div>
+              <ul class="meta">
+                <li>2026</li>
+                <li>Selesai</li>
+                <li>Kategori</li>
+              </ul>
+            </div>
+            <span class="cursor-pill" aria-hidden="true">Lihat proyek →</span>
+          </a>
         </article>
-        <article class="card reveal">
-          <div class="thumb" aria-hidden="true"></div>
-          <h3>Nama Proyek 2</h3>
-          <p>Deskripsi singkat proyek dan peran Anda di dalamnya.</p>
-          <a href="#" class="link">Lihat detail</a>
+
+        <article class="stack-item">
+          <a href="#" class="work-card">
+            <div class="work-media media-2"></div>
+            <div class="work-info">
+              <div>
+                <h2>Nama Proyek Dua</h2>
+                <p class="tagline">Satu kalimat singkat tentang proyek ini.</p>
+              </div>
+              <ul class="meta">
+                <li>2025</li>
+                <li>Selesai</li>
+                <li>Kategori</li>
+              </ul>
+            </div>
+            <span class="cursor-pill" aria-hidden="true">Lihat proyek →</span>
+          </a>
         </article>
-        <article class="card reveal">
-          <div class="thumb" aria-hidden="true"></div>
-          <h3>Nama Proyek 3</h3>
-          <p>Deskripsi singkat proyek dan peran Anda di dalamnya.</p>
-          <a href="#" class="link">Lihat detail</a>
+
+        <article class="stack-item">
+          <a href="#" class="work-card">
+            <div class="work-media media-3"></div>
+            <div class="work-info">
+              <div>
+                <h2>Nama Proyek Tiga</h2>
+                <p class="tagline">Satu kalimat singkat tentang proyek ini.</p>
+              </div>
+              <ul class="meta">
+                <li>2024</li>
+                <li>Berjalan</li>
+                <li>Kategori</li>
+              </ul>
+            </div>
+            <span class="cursor-pill" aria-hidden="true">Lihat proyek →</span>
+          </a>
         </article>
       </div>
     </section>
 
-    <section id="keahlian" class="section alt reveal">
-      <h2>Keahlian</h2>
-      <ul class="tags">
-        <li>Keahlian 1</li>
-        <li>Keahlian 2</li>
-        <li>Keahlian 3</li>
-        <li>Keahlian 4</li>
-        <li>Keahlian 5</li>
-      </ul>
+    <!-- Pernyataan: kata-kata menyala mengikuti scroll -->
+    <section id="tentang" class="statement">
+      <h2 class="scrub">Setiap proyek saya mulai dengan mendengarkan. Ganti kalimat ini dengan cerita singkat tentang cara Anda bekerja dan apa yang membuat karya Anda berbeda.</h2>
     </section>
 
-    <section id="kontak" class="section reveal">
-      <h2>Kontak</h2>
-      <p>Tertarik bekerja sama? Kirim pesan lewat:</p>
-      <p><a class="link" href="mailto:email@contoh.com">email@contoh.com</a></p>
+    <!-- Band visual dengan parallax -->
+    <section class="band" aria-hidden="true">
+      <div class="band-inner" data-speed="-0.15"></div>
+    </section>
+
+    <!-- Marquee -->
+    <section class="logos">
+      <h2 class="reveal">Alat &amp; keahlian yang saya gunakan</h2>
+      <div class="marquee">
+        <ul class="marquee-track">
+          <li>Keahlian 1</li><li>Keahlian 2</li><li>Keahlian 3</li><li>Keahlian 4</li><li>Keahlian 5</li><li>Keahlian 6</li>
+        </ul>
+        <ul class="marquee-track" aria-hidden="true">
+          <li>Keahlian 1</li><li>Keahlian 2</li><li>Keahlian 3</li><li>Keahlian 4</li><li>Keahlian 5</li><li>Keahlian 6</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="contact">
+      <p class="label reveal">Kontak</p>
+      <h2 class="reveal">Mari bekerja sama.</h2>
+      <a class="contact-link magnetic reveal" href="mailto:email@contoh.com">email@contoh.com</a>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span id="year">2026</span> Siti Nuraida. Semua hak dilindungi.</p>
+    <p>&copy; <span id="year">2026</span> Siti Nuraida</p>
+    <a href="#top">Kembali ke atas ↑</a>
   </footer>
 
-  <script>document.documentElement.classList.add("js");</script>
   <script src="script.js"></script>
 </body>
 </html>
