@@ -329,3 +329,15 @@ ul { list-style: none; margin: 0; padding: 0; }
 .skill-list { columns: 2; column-gap: 3rem; }
 .skill-list li { break-inside: avoid; }
 @media (max-width: 480px) { .skill-list { columns: 1; } }
+
+/* Insight Instagram + metrik di sampingnya */
+.insight { display: grid; grid-template-columns: minmax(0, 300px) 1fr; gap: 28px; align-items: start; margin: 1.5rem 0; }
+.insight .shot { margin: 0; }
+.metrics { background: var(--white); border: 1px solid #d3d6db; border-radius: 22px; padding: 24px; }
+.metrics .label { text-align: left; margin: 0 0 12px; }
+.metrics dl { margin: 0; }
+.metrics dl div { padding: 14px 0; border-top: 1px solid var(--gray); }
+.metrics dl div:first-child { border-top: 0; }
+.metrics dt { color: var(--muted); font-size: .95rem; }
+.metrics dd { margin: .1rem 0 0; font-family: var(--font-title); font-size: clamp(2rem, 4.5vw, 2.8rem); font-weight: 600; line-height: 1.1; }
+@media (max-width: 720px) { .insight { grid-template-columns: 1fr; } .insight .shot.tall { max-width: 300px; } }
