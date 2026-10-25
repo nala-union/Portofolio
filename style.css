@@ -387,3 +387,14 @@ ul { list-style: none; margin: 0; padding: 0; }
 .menu-photo { width: clamp(56px, 6vw, 76px); border-width: 3px; box-shadow: 0 0 0 1.5px var(--sage), 0 8px 16px -8px rgba(51, 51, 51, .3); }
 .menu-profile { gap: 16px; }
 .menu-name { font-size: clamp(1.6rem, 3vw, 2.2rem); }
+
+/* Hero: poin-poin lebih kecil dari nama, lebih besar dari subjudul */
+.hero h1 { max-width: none; font-size: clamp(2.6rem, 6vw, 4.6rem); }
+.hero-points { display: block; width: fit-content; margin: 1.4rem auto 0; padding-left: 1.3rem; list-style: disc; text-align: left; font-family: var(--font-title); font-size: clamp(1.6rem, 3vw, 2.3rem); font-weight: 600; line-height: 1.35; }
+.hero-points li::marker { color: var(--sage); }
+.hero-sub { margin-top: 1.4rem; font-size: clamp(1.05rem, 1.6vw, 1.25rem); }
+
+/* Ikon media sosial */
+.socials { display: flex; flex-wrap: wrap; gap: 12px; margin: .5rem 0 0; }
+.social-icon { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; border: 1px solid #c9ccd1; background: var(--white); text-decoration: none; transition: background .25s, border-color .25s, transform .25s; }
+.social-icon:hover { background: var(--sage); border-color: var(--sage); transform: translateY(-3px); }
