@@ -354,20 +354,31 @@ ul { list-style: none; margin: 0; padding: 0; }
 .menu-tags li { padding: .5rem .9rem; border-radius: 12px; background: rgba(255, 255, 255, .7); font-size: .95rem; font-weight: 600; }
 @media (max-width: 720px) {
   .menu { align-content: start; padding-top: 84px; gap: 24px; }
-  .menu a { font-size: clamp(2rem, 9vw, 2.6rem); }
   .menu-visual { display: block; padding: 20px; border-radius: 22px; }
   .menu-visual p { font-size: .98rem; }
 }
 
-/* Menu dengan nomor dan keterangan */
-.menu a { display: grid; grid-template-columns: auto 1fr; column-gap: 18px; align-items: baseline; font-size: inherit; line-height: 1.1; padding: .35rem 0; }
-.menu-title { font-family: var(--font-title); font-size: clamp(2.4rem, 6vw, 4.2rem); line-height: 1.1; }
-.menu-num { font-family: var(--font-body); font-size: .85rem; font-weight: 700; letter-spacing: .1em; color: var(--muted); }
-.menu-desc { grid-column: 2; font-family: var(--font-body); font-size: 1rem; color: var(--muted); margin-top: .2rem; }
-.menu a:hover .menu-title { font-style: italic; }
-.menu a:hover .menu-num { color: var(--charcoal); }
+
+/* Menu: profil singkat + foto di kiri, career interest di kanan */
+.menu { align-items: center; }
+.menu-main { display: flex; flex-direction: column; gap: 22px; }
+.menu-profile { display: flex; align-items: center; gap: 22px; }
+.menu-photo { width: clamp(96px, 12vw, 150px); height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 50%; border: 5px solid var(--white); box-shadow: 0 0 0 2px var(--sage), 0 18px 30px -16px rgba(51, 51, 51, .3); flex-shrink: 0; }
+.menu-label { margin: 0 0 .3rem; font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.menu-name { margin: 0; font-family: var(--font-title); font-size: clamp(2rem, 4.2vw, 3.2rem); font-weight: 600; line-height: 1.1; }
+.menu-role { margin: .2rem 0 0; color: var(--muted); font-size: 1.05rem; }
+.menu-bio { margin: 0; max-width: 34rem; font-size: 1.08rem; line-height: 1.7; }
+.menu .menu-links { display: flex; flex-wrap: wrap; gap: 8px 10px; margin-top: 6px; }
+.menu .menu-links li { overflow: hidden; border-radius: 999px; }
+.menu .menu-links a { display: inline-flex; gap: 8px; align-items: baseline; padding: .55rem 1.1rem; border: 1px solid var(--gray); border-radius: 999px; font-family: var(--font-body); font-size: 1rem; font-weight: 600; line-height: 1.2; }
+.menu .menu-links a:hover { font-style: normal; background: var(--sage); border-color: var(--sage); }
+.menu-num { font-size: .75rem; letter-spacing: .08em; color: var(--muted); }
+.menu-visual .menu-heading { margin: 0 0 1rem; font-family: var(--font-title); font-size: clamp(1.8rem, 3.2vw, 2.6rem); font-weight: 600; line-height: 1.15; }
+.menu-tags li { display: flex; flex-direction: column; gap: 2px; padding: .8rem 1rem; }
+.menu-tags strong { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
 @media (max-width: 720px) {
-  .menu a { font-size: inherit; padding: .2rem 0; }
-  .menu-title { font-size: clamp(1.9rem, 8vw, 2.4rem); }
-  .menu-desc { font-size: .9rem; }
+  .menu { align-content: start; padding-top: 84px; gap: 24px; }
+  .menu-profile { gap: 16px; }
+  .menu-name { font-size: 1.9rem; }
+  .menu-bio { font-size: 1rem; }
 }
