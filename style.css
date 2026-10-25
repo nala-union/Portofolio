@@ -344,3 +344,17 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 /* Foto profil bulat di bagian Tentang */
 .portrait-photo { display: block; width: clamp(160px, 22vw, 240px); height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 50%; margin: 0 auto 28px; border: 6px solid var(--white); box-shadow: 0 0 0 2px var(--sage), 0 24px 40px -20px rgba(51, 51, 51, .3); }
+
+/* Panel profil di dalam menu */
+.menu { overflow-y: auto; }
+.menu-visual { height: auto; max-height: none; padding: clamp(24px, 3vw, 40px); }
+.menu-visual p { margin: 0 0 1.1rem; font-size: 1.05rem; line-height: 1.65; }
+.menu-visual .menu-label { margin: 0 0 .4rem; font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.menu-tags { display: flex; flex-direction: column; gap: 8px; margin-top: .4rem; }
+.menu-tags li { padding: .5rem .9rem; border-radius: 12px; background: rgba(255, 255, 255, .7); font-size: .95rem; font-weight: 600; }
+@media (max-width: 720px) {
+  .menu { align-content: start; padding-top: 84px; gap: 24px; }
+  .menu a { font-size: clamp(2rem, 9vw, 2.6rem); }
+  .menu-visual { display: block; padding: 20px; border-radius: 22px; }
+  .menu-visual p { font-size: .98rem; }
+}
