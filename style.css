@@ -358,3 +358,16 @@ ul { list-style: none; margin: 0; padding: 0; }
   .menu-visual { display: block; padding: 20px; border-radius: 22px; }
   .menu-visual p { font-size: .98rem; }
 }
+
+/* Menu dengan nomor dan keterangan */
+.menu a { display: grid; grid-template-columns: auto 1fr; column-gap: 18px; align-items: baseline; font-size: inherit; line-height: 1.1; padding: .35rem 0; }
+.menu-title { font-family: var(--font-title); font-size: clamp(2.4rem, 6vw, 4.2rem); line-height: 1.1; }
+.menu-num { font-family: var(--font-body); font-size: .85rem; font-weight: 700; letter-spacing: .1em; color: var(--muted); }
+.menu-desc { grid-column: 2; font-family: var(--font-body); font-size: 1rem; color: var(--muted); margin-top: .2rem; }
+.menu a:hover .menu-title { font-style: italic; }
+.menu a:hover .menu-num { color: var(--charcoal); }
+@media (max-width: 720px) {
+  .menu a { font-size: inherit; padding: .2rem 0; }
+  .menu-title { font-size: clamp(1.9rem, 8vw, 2.4rem); }
+  .menu-desc { font-size: .9rem; }
+}
