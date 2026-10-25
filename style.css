@@ -398,3 +398,9 @@ ul { list-style: none; margin: 0; padding: 0; }
 .socials { display: flex; flex-wrap: wrap; gap: 12px; margin: .5rem 0 0; }
 .social-icon { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; border: 1px solid #c9ccd1; background: var(--white); text-decoration: none; transition: background .25s, border-color .25s, transform .25s; }
 .social-icon:hover { background: var(--sage); border-color: var(--sage); transform: translateY(-3px); }
+
+/* Poin hero berjajar ke samping */
+.hero-points { display: flex; flex-wrap: wrap; justify-content: center; gap: .3rem 2rem; width: auto; padding-left: 0; list-style: none; }
+.hero-points li { display: flex; align-items: center; gap: .55rem; white-space: nowrap; }
+.hero-points li::before { content: ""; width: .5em; height: .5em; border-radius: 50%; background: var(--sage); flex-shrink: 0; }
+@media (max-width: 480px) { .hero-points { gap: .2rem 1.2rem; font-size: 1.3rem; } }
