@@ -429,3 +429,11 @@ ul { list-style: none; margin: 0; padding: 0; }
 .cta-btn svg { width: 30px; height: 30px; }
 .cta-text { flex: 0 1 12.5rem; width: auto; align-items: center; text-align: center; }
 @media (max-width: 760px) { .cta-btn { min-height: 88px; } }
+
+/* Tombol kontak: nama platform di atas, logo di tengah, keterangan di bawah */
+.cta-btn { flex-direction: column; justify-content: center; align-items: center; gap: 10px; min-height: 164px; padding: 22px 18px; text-align: center; }
+.cta-text { display: contents; }
+.cta-text strong { order: 1; }
+.cta-btn svg { order: 2; width: 34px; height: 34px; }
+.cta-text small { order: 3; max-width: 100%; }
+@media (max-width: 760px) { .cta-btn { min-height: 150px; } }
