@@ -414,3 +414,12 @@ ul { list-style: none; margin: 0; padding: 0; }
 .cta-text strong { font-size: 1.1rem; }
 .cta-text small { font-size: .88rem; opacity: .85; overflow-wrap: anywhere; }
 @media (max-width: 760px) { .cta-row { grid-template-columns: 1fr; max-width: 420px; } }
+
+/* Tombol kontak: isi rata tengah, tipografi seragam */
+.cta-row { gap: 18px; max-width: 960px; }
+.cta-btn { flex-direction: column; justify-content: center; align-items: center; gap: 10px; min-height: 148px; padding: 24px 18px; text-align: center; font-family: var(--font-body); }
+.cta-btn svg { width: 30px; height: 30px; }
+.cta-text { align-items: center; text-align: center; gap: 2px; width: 100%; }
+.cta-text strong { font-family: var(--font-body); font-size: 1.2rem; font-weight: 700; letter-spacing: .01em; line-height: 1.3; }
+.cta-text small { font-family: var(--font-body); font-size: 1rem; font-weight: 400; line-height: 1.4; opacity: .9; }
+@media (max-width: 760px) { .cta-btn { min-height: 120px; } }
