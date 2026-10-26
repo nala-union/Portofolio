@@ -503,3 +503,6 @@ h1, h2, .brand, .menu-name, .hero-points { font-variant-numeric: lining-nums; fo
 /* Paragraf ringkasan setelah langkah-langkah: sedikit lebih besar */
 .detail .steps + p { font-size: clamp(1.15rem, 1.6vw, 1.3rem); line-height: 1.65; color: var(--charcoal); max-width: 62ch; margin-top: 1.6rem; }
 .detail figure.shot + p { margin-top: .9rem; }
+
+/* Paragraf lanjutan di bagian Tentang Saya: lebih besar */
+.statement .statement-note { font-size: clamp(1.25rem, 2vw, 1.5rem); line-height: 1.65; color: var(--charcoal); max-width: 46rem; }
