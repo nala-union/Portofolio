@@ -499,3 +499,6 @@ h1, h2, .brand, .menu-name, .hero-points { font-variant-numeric: lining-nums; fo
 /* Teks kecil lain */
 .shot figcaption { font-size: var(--fs-small); }
 .site-footer { font-size: var(--fs-small); }
+
+/* Paragraf ringkasan setelah langkah-langkah: sedikit lebih besar */
+.detail .steps + p { font-size: clamp(1.15rem, 1.6vw, 1.3rem); line-height: 1.65; color: var(--charcoal); max-width: 62ch; margin-top: 1.6rem; }
