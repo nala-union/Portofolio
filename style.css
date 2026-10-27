@@ -511,3 +511,9 @@ h1, h2, .brand, .menu-name, .hero-points { font-variant-numeric: lining-nums; fo
 .work-info .meta { font-size: clamp(1.1rem, 1.6vw, 1.3rem); line-height: 1.9; font-weight: 600; }
 .work-info .meta li:first-child { color: var(--charcoal); }
 @media (max-width: 720px) { .work-info .meta { font-size: 1.05rem; gap: 6px 16px; flex-wrap: wrap; } }
+
+/* Kartu dengan daftar peran (jobdesk) di kanan */
+.work-info .meta-role { white-space: normal; max-width: 24rem; text-align: right; font-size: clamp(1rem, 1.4vw, 1.15rem); line-height: 1.5; gap: 0; }
+.work-info .meta-role li { padding: .22rem 0; }
+.work-info .meta-role .meta-title { font-size: .8rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); padding-bottom: .35rem; }
+@media (max-width: 720px) { .work-info .meta-role { display: block; max-width: none; text-align: left; } }
