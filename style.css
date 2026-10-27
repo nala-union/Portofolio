@@ -506,3 +506,8 @@ h1, h2, .brand, .menu-name, .hero-points { font-variant-numeric: lining-nums; fo
 
 /* Paragraf lanjutan di bagian Tentang Saya: lebih besar */
 .statement .statement-note { font-size: clamp(1.25rem, 2vw, 1.5rem); line-height: 1.65; color: var(--charcoal); max-width: 46rem; }
+
+/* Keterangan di kanan kartu Karya Pilihan: lebih besar */
+.work-info .meta { font-size: clamp(1.1rem, 1.6vw, 1.3rem); line-height: 1.9; font-weight: 600; }
+.work-info .meta li:first-child { color: var(--charcoal); }
+@media (max-width: 720px) { .work-info .meta { font-size: 1.05rem; gap: 6px 16px; flex-wrap: wrap; } }
